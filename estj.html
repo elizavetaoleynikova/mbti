@@ -36,6 +36,11 @@
       .j {
         text-align: justify;
       }
+       @media screen and (max-width: 1280px) {
+        img {
+          width: 100%;
+        }
+      }
 
       @media screen and (max-width: 1024px) {
         img {
@@ -52,53 +57,38 @@
           width: 100%;
         }
       }
-      @media screen and (max-width: 1024px) {
-        img {
-          width: 100%;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        img {
-          width: 100%;
-        }
-      }
-      @media screen and (max-width: 375px) {
-        img {
-          width: 100%;
-        }
-      }
+     
       body {
-        background: rgb(175, 217, 183); /* Цвет фона */
-        color: rgb(47, 79, 79); /* Цвет текста */
-        font-family: "Vollkorn", serif;
-        font-size: 23px;
+        background: rgb(175, 217, 183); 
+        color: rgb(47, 79, 79);
       }
       p,
       img {
         margin-bottom: 2em;
         margin-top: 2em;
       }
-      card-header,
+       .card-header {
+      font-family: "Vollkorn", serif;
+        font-size: 23px;
+        color: rgb(47, 79, 79);
+      }
       p,
       ul {
         font-family: "Vollkorn", serif;
         font-size: calc((100vw - 480px) / (1280 - 480) * (24 - 16) + 16px);
       }
     </style>
-    <link rel="icon" href="img/icon.jpg" type="image/jpg" sizes="64x64" />
+    <link rel="icon" href="img/icon.png" type="image/png" sizes="32x32" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
-          type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -129,8 +119,6 @@
         style="padding: 50px"
         src="img/МБТИ 1.png"
         alt="MBTI"
-        vspace="5"
-        hspace="6"
       />
     </div>
     <div class="container">
@@ -254,29 +242,25 @@
         <li>6% женщин</li>
       </ul>
       <p class="c">Среди известных личностей этого типа:</p>
-      <div
-        id="carouselExampleCaptions"
+     <div
+        id="carousel"
         class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
           <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carousel"
             data-bs-slide-to="0"
             class="active"
-            aria-current="true"
             aria-label="Slide 1"
           ></button>
           <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carousel"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
           <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carousel"
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
@@ -322,16 +306,14 @@
         </div>
         <button
           class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carousel"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
         <button
           class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carousel"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -340,7 +322,7 @@
 
       <p>Подробнее о других типах личности:</p>
 
-      <div class="container text-center ml-2">
+      <div class="container с">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
           <div class="col">
             <div
